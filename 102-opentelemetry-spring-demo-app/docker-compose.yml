@@ -1,6 +1,16 @@
 version: '2'
 
 services:
+
+  tracing-server:
+    image: aternity/apm-collector
+    container_name: tracing-server
+    mem_limit: 512M
+    environment:
+      - SERVER_URL=wss://<SaasAnalysisServerHost>/?RPM_AGENT_CUSTOMER_ID=<customerId>
+    ports:
+     - 9411:9411
+
   config-server:
     image: springcommunity/spring-petclinic-config-server
     container_name: config-server
@@ -61,15 +71,6 @@ services:
     entrypoint: ["./dockerize","-wait=tcp://discovery-server:8761","-timeout=60s","--","java", "org.springframework.boot.loader.JarLauncher"]
     ports:
      - 8080:8080
-
-  tracing-server:
-    image: aternity/apm-collector
-    container_name: tracing-server
-    mem_limit: 512M
-    environment:
-      - SERVER_URL=wss://<SaasAnalysisServerHost>/?RPM_AGENT_CUSTOMER_ID=<customerId>
-    ports:
-     - 9411:9411
 
   admin-server:
     image: springcommunity/spring-petclinic-admin-server
