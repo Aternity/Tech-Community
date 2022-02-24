@@ -69,7 +69,7 @@ curl http://localhost:8104/fetch
 
 Search transaction, browse the spans for the selected transaction :
 
-![Aternity APM OpenTelemetry traces](images/aternity-opentelemetry-service104-js-traces.png)
+![Aternity APM OpenTelemetry traces](images/aternity-opentelemetry-service104-js-transactions.png)
 
 ## Notes 
 
