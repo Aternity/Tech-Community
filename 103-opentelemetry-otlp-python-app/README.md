@@ -61,7 +61,7 @@ export ATERNITY_CUSTOMER_ID="12341234-12341234-13241234"
 docker-compose up
 ```
 
-With PowerShell:
+Using PowerShell:
 
 ```PowerShell
 # Go to the directory that contains docker-compose.yml
