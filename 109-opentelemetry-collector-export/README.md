@@ -2,7 +2,7 @@
 
 The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) is part of the [Aternity DEM platform](https://www.aternity.com/application-performance-monitoring/) and can collect OTLP, the OpenTelemetry native telemetry protocols, as well as Jaeger and Zipkin telemetry.
 
-In this cookbook the OpenTelemetry Collector receive the telemetry from a Go app and export it to the [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector).
+In this cookbook the OpenTelemetry Collector receives the telemetry from a Go app and exports it to the [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector), as well as to a Jaeger all-in-one and a Zipkin all-in-one backend.
 
 ![diagram](images/109-diagram.png)
 
