@@ -4,7 +4,7 @@ In this cookbook, [Aternity](https://www.aternity.com) collects the telemetry of
 
 ![diagram](images/108-diagram.png)
 
-The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) can collect OTLP, the OpenTelemetry native telemetry protocols, as well as Jaeger and Zipkin telemetry. Here it collects Zipkin telemetry like in the other (Aternity Tech-Community Cookbook 104)[../104-opentelemetry-zipkin-nodejs-app] where the app is instrumented with OpenTelemetry.
+The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) can collect OTLP, the OpenTelemetry native telemetry protocols, as well as Jaeger and Zipkin telemetry. Here it collects Zipkin telemetry like in the other [Aternity Tech-Community Cookbook 104](../104-opentelemetry-zipkin-nodejs-app) where the app is instrumented with OpenTelemetry.
 
 ## Prerequisites
 
