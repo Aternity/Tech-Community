@@ -1,12 +1,10 @@
 # 108-collect-zipkin-nodejs-app
 
-The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) is part of the [Aternity DEM platform](https://www.aternity.com/application-performance-monitoring/) and can collect OTLP, the OpenTelemetry native telemetry protocols, as well as Jaeger and Zipkin telemetry.
-
-In this cookbook, [Aternity](https://www.aternity.com) collects the telemetry of a **nodejs** webapp that is instrumented with [Zipkin](https://zipkin.io/). The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) container is deployed next to the web app. It collects every trace - no sampling.
+In this cookbook, [Aternity](https://www.aternity.com) collects the telemetry of a **nodejs** webapp that is instrumented with [Zipkin](https://zipkin.io/). The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) container is deployed next to the web app and collects every trace.
 
 ![diagram](images/108-diagram.png)
 
-The setup is the same as in the (Aternity Tech-Community Cookbook 104)[../104-opentelemetry-zipkin-nodejs-app] where the app is instrumented with OpenTelemetry, instead of Zipkin.
+The [Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) can collect OTLP, the OpenTelemetry native telemetry protocols, as well as Jaeger and Zipkin telemetry. Here it collects Zipkin telemetry like in the other (Aternity Tech-Community Cookbook 104)[../104-opentelemetry-zipkin-nodejs-app] where the app is instrumented with OpenTelemetry.
 
 ## Prerequisites
 
