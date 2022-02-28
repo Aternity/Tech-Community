@@ -29,7 +29,7 @@ Download a local copy of the  [docker-compose.yaml](docker-compose.yaml) file, f
 Start the containers using the [docker-compose.yaml](docker-compose.yaml), for example with Bash:
 
 ```bash
-cd Tech-Community/104-opentelemetry-zipkin-nodejs-app
+cd Tech-Community/108-collect-zipkin-nodejs-app
 
 # Configure the environment variables for the Aternity OpenTelemetry Collector
 export ATERNITY_SAAS_SERVER_HOST="agents.apm.myaccount.aternity.com"
@@ -41,7 +41,7 @@ docker-compose up
 or with PowerShell:
 
 ```PowerShell
-cd Tech-Community/104-opentelemetry-zipkin-nodejs-app
+cd Tech-Community/108-collect-zipkin-nodejs-app
 
 # Configure the environement variable for the Aternity OpenTelemetry Collector
 $env:ATERNITY_SAAS_SERVER_HOST="agents.apm.myaccount.aternity.com"
@@ -61,7 +61,7 @@ Navigate to http://localhost:8108/fetch from a browser or call the url from a co
 For example using curl:
 
 ```bash
-curl http://localhost:8104/fetch
+curl http://localhost:8108/fetch
 ```
 
 ### 4. Open the Aternity APM webconsole to visualize and analyze the traces collected for every transactions
