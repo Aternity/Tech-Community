@@ -1,6 +1,7 @@
 # 106-opentelemetry-autoinstrumentation-java-app
 
-Simple Java application with OpenTelemetry automatic instrumentation configured with multiple telemetry exporters to demonstrate at the same time logging on the console, OTLP-gRPC telemetry export to the Aternity APM OpenTelemetry Collector and Jaeger telemetry export
+A simple Java application is launched with OpenTelemetry automatic instrumentation and configured with multiple telemetry exporters to demonstrate at the same time logging on the console, OTLP-gRPC telemetry export to the Aternity APM OpenTelemetry Collector and Jaeger telemetry export
+
 
 ## Prerequisites
 
@@ -20,7 +21,7 @@ Navigate to Aternity APM (for example [https://apm.myaccount.aternity.com](https
 
 Download the source, for example [right-click here](https://github.com/Aternity/Tech-Community/archive/refs/heads/main.zip) to download zip archive and exand it locally.
 
-### Step 3 - Start the `spring-petclinit-microservices` app
+### Step 3 - Start the containers and the app
 
 In a shell, go to the Cookbook folder, configure the Aternity APM OpenTelemetry Collector using the environment variable, ATERNITY_SAAS_SERVER_HOST and ATERNITY_CUSTOMER_ID, and starts all the containers with docker-compose.
 
@@ -48,6 +49,11 @@ $env:ATERNITY_CUSTOMER_ID="12341234-12341234-13241234"
 # Start the containers
 docker-compose up
 ```
+
+### Step 4 - Open the Aternity APM webconsole to visualize and analyze the traces collected for every transaction
+
+In the Search, transaction will appear with the instance name "service106-java-otlp"
+Search transactions 
 
 #### License
 
