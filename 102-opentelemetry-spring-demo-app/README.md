@@ -13,20 +13,20 @@ The [Aternity APM OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm
 1. an Aternity APM account (SaaS)
 2. a Docker host, for example [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-## Step by Step
+## Step by step
 
-### Connect to Aternity APM webconsole
+### Step 1 - Connect to Aternity APM webconsole
 
 Navigate to Aternity APM (for example [https://apm.myaccount.aternity.com](https://apm.myaccount.aternity.com)) > Agents > Install Agents:
 
 1. Find your **CustomerID**, for example *12341234-12341234-13241234*
 2. Grab **SaaS Analysis Server Host**, for example *agents.apm.myaccount.aternity.com*
 
-### Get the the docker compose
+### Step 2 - Get the docker-compose
 
 Download a local copy of the file [docker-compose.yml](docker-compose.yml), for example  [right-click here to download](https://raw.githubusercontent.com/Aternity/Tech-Community/main/102-opentelemetry-spring-demo-app/docker-compose.yml) and save it in the directory `Tech-Community/102-opentelemetry-spring-demo-app`
 
-In this YAML file docker-compose.yml, the *tracing-server* section define the Aternity APM OpenTelemetry Collector with variables for the CustomerID and the SaaS Analysis Server Host.
+In this YAML file, the *tracing-server* section contains the Aternity APM OpenTelemetry Collector definition. There are variables that correspond to the CustomerID and to the SaaS Analysis Server Host. They will be set in the next step. 
 
 ```yaml
   tracing-server:
@@ -39,7 +39,7 @@ In this YAML file docker-compose.yml, the *tracing-server* section define the At
      - 9411:9411
 ```
 
-### Start the `spring-petclinit-microservices` app
+### Step 3 - Start the `spring-petclinit-microservices` app
 
 In a shell, just go in the folder where you keep the [docker-compose.yml](docker-compose.yml). Configure the Aternity APM OpenTelemetry Collector using environment variable and starts all the containers with docker-compose.
 
@@ -71,13 +71,13 @@ $env:ATERNITY_CUSTOMER_ID="12341234-12341234-13241234"
 docker-compose up
 ```
 
-### Exercise the application
+## Step 4 - Exercise the application
 
 Browse http://localhost:8080 and click around to generate some telemetry that will be collected by the Aternity APM OpenTelemetry Collector
 
 ![spring petclinic](images/spring-petclinic.png)
 
-### Open the Aternity APM webconsole to visualize and analyze the traces collected for every transaction
+## Step 5 - Open the Aternity APM webconsole to visualize and analyze the traces collected for every transaction
 
 Search transactions:
 
