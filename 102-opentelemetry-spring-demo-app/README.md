@@ -22,52 +22,52 @@ Navigate to Aternity APM (for example [https://apm.myaccount.aternity.com](https
 1. Find your **CustomerID**, for example *12341234-12341234-13241234*
 2. Grab **SaaS Analysis Server Host**, for example *agents.apm.myaccount.aternity.com*
 
-### Configure the Aternity OpenTelemetry Collector with your CustomerID & SaaS Analysis Server Host
+### Get the the docker compose
 
 Download a local copy of the file [docker-compose.yml](docker-compose.yml), for example  [right-click here to download](https://raw.githubusercontent.com/Aternity/Tech-Community/main/102-opentelemetry-spring-demo-app/docker-compose.yml) and save it in the directory `Tech-Community/102-opentelemetry-spring-demo-app`
 
-Edit the YAML file docker-compose.yml and in the *tracing-server* section, replace the following tokens with the information from the [previous step](#connect-to-aternity-apm-webconsole) and save:
-1. `${ATERNITY_CUSTOMER_ID}`
-2. `${ATERNITY_SAAS_SERVER_HOST}`  
+In this YAML file docker-compose.yml, the *tracing-server* section define the Aternity APM OpenTelemetry Collector with variables for the CustomerID and the SaaS Analysis Server Host.
 
 ```yaml
   tracing-server:
     image: aternity/apm-collector
     container_name: tracing-server
-    mem_limit: 512M
+    mem_limit: 128M
     environment:
       - SERVER_URL=wss://${ATERNITY_SAAS_SERVER_HOST}/?RPM_AGENT_CUSTOMER_ID=${ATERNITY_CUSTOMER_ID}
     ports:
      - 9411:9411
 ```
 
-For example:
-
-```yaml
-  tracing-server:
-    image: aternity/apm-collector
-    container_name: tracing-server
-    mem_limit: 512M
-    environment:
-      - SERVER_URL=wss://agents.apm.myaccount.aternity.com/?RPM_AGENT_CUSTOMER_ID=12341234-12341234-13241234
-    ports:
-     - 9411:9411
-```
-
-
 ### Start the `spring-petclinit-microservices` app
 
-Open a shell
+In a shell, just go in the folder where you keep the [docker-compose.yml](docker-compose.yml). Configure the Aternity APM OpenTelemetry Collector using environment variable and starts all the containers with docker-compose.
 
-Go in the folder where you keep the [docker-compose.yml](docker-compose.yml) file you just configured. For example:
+For example, using Bash:
 
-```shell
+```bash
+# Go to the directory that contains docker-compose.yaml
 cd Tech-Community/102-opentelemetry-spring-demo-app
+
+# Configure the environment variables for the Aternity OpenTelemetry Collector
+export ATERNITY_SAAS_SERVER_HOST="agents.apm.myaccount.aternity.com"
+export ATERNITY_CUSTOMER_ID="12341234-12341234-13241234"
+
+# Start the containers
+docker-compose up
 ```
 
-Start the containers:
+or else using PowerShell:
 
-```shell
+```PowerShell
+# Go to the directory that contains docker-compose.yaml
+cd Tech-Community/102-opentelemetry-spring-demo-app
+
+# Configure the environement variable for the Aternity OpenTelemetry Collector
+$env:ATERNITY_SAAS_SERVER_HOST="agents.apm.myaccount.aternity.com"
+$env:ATERNITY_CUSTOMER_ID="12341234-12341234-13241234"
+
+# Start the containers
 docker-compose up
 ```
 
@@ -103,6 +103,23 @@ Or in a shell, go to the folder where you keep the [docker-compose.yml](docker-c
 docker-compose down
 ```
 
+### Configuring Aternity APM OpenTelemetry Collector
+
+The CustomerID and the SaaS Analysis Server Host configuration of the Aternity APM OpenTelemetry container can be defined directly in the [docker-compose.yml](docker-compose.yml), for example:
+
+```yaml
+  tracing-server:
+    image: aternity/apm-collector
+    container_name: tracing-server
+    mem_limit: 128M
+    environment:
+      - SERVER_URL=wss://agents.apm.myaccount.aternity.com/?RPM_AGENT_CUSTOMER_ID=12341234-12341234-13241234
+    ports:
+     - 9411:9411
+```
+
 #### License
 
-Copyright (c) 2022 Aternity. The contents provided here are licensed under the terms and conditions of the MIT License accompanying the software ("License"). The scripts are distributed "AS IS" as set forth in the License. The script also include certain third party code. All such third party code is also distributed "AS IS" and is licensed by the respective copyright holders under the applicable terms and conditions (including, without limitation, warranty and liability disclaimers) identified in the license notices accompanying the software.
+Copyright (c) 2022 Riverbed Technology, Inc. 
+
+The contents provided here are licensed under the terms and conditions of the MIT License accompanying the software ("License"). The scripts are distributed "AS IS" as set forth in the License. The script also include certain third party code. All such third party code is also distributed "AS IS" and is licensed by the respective copyright holders under the applicable terms and conditions (including, without limitation, warranty and liability disclaimers) identified in the license notices accompanying the software.
