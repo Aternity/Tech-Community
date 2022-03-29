@@ -41,7 +41,7 @@ In this YAML file, the *tracing-server* section contains the Aternity APM OpenTe
 
 ### Step 3 - Start the `spring-petclinit-microservices` app
 
-In a shell, just go in the folder where you keep the [docker-compose.yml](docker-compose.yml). Configure the Aternity APM OpenTelemetry Collector using environment variable and starts all the containers with docker-compose.
+In a shell, just go in the folder where you keep the [docker-compose.yml](docker-compose.yml). Configure the Aternity APM OpenTelemetry Collector using the environment variable, ATERNITY_SAAS_SERVER_HOST and ATERNITY_CUSTOMER_ID, and starts all the containers with docker-compose.
 
 For example, using Bash:
 
