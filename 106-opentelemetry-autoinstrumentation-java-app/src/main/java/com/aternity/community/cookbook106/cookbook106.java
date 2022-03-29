@@ -1,7 +1,7 @@
 // Cookbook106.java
 //
 // Aternity Tech-Community (https://github.com/Aternity/Tech-Community)
-// 106-opentelemetry-otlp-java-app
+// 106-opentelemetry-autoinstrumentation-java-app
 // version: 22.3.29
 //
 // Simple Java app to demonstrate OpenTelemetry autoinstrumentation of the java.net.HttpURLConnection class
