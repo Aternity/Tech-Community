@@ -1,7 +1,7 @@
 # Dockerfile
 #
 # Aternity Tech-Community (https://github.com/Aternity/Tech-Community)
-# 106-opentelemetry-otlp-java-app
+# 106-opentelemetry-autoinstrumentation-java-app
 # version: 22.3.29
 #
 # Usage:
