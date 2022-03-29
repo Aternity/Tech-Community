@@ -49,7 +49,7 @@ services:
 
     environment:
 
-      OTEL_SERVICE_NAME: "service106-java-otlp_draft"
+      OTEL_SERVICE_NAME: "service106-java-otlp"
 
       OTEL_TRACES_EXPORTER: logging,otlp,jaeger
 
