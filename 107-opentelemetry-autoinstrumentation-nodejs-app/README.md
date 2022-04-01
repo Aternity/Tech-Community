@@ -57,7 +57,7 @@ The application should now be running. Every trace is collected by the Aternity 
 
 Navigate to http://localhost:8107/fetch from a browser or call the url from a command line. 
 
-![service104-js](images/aternity-opentelemetry-service107-js-navigate.png)
+![service107-js](images/aternity-opentelemetry-service107-js-navigate.png)
 
 For example using curl:
 
