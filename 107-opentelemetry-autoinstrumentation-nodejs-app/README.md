@@ -30,7 +30,7 @@ Download a local copy of the  [docker-compose.yaml](docker-compose.yaml) file, f
 Start the containers using the [docker-compose.yaml](docker-compose.yaml), for example with Bash:
 
 ```bash
-cd Tech-Community/104-opentelemetry-zipkin-nodejs-app
+cd Tech-Community/107-opentelemetry-autoinstrumentation-nodejs-app
 
 # Configure the environment variables for the Aternity OpenTelemetry Collector
 export ATERNITY_SAAS_SERVER_HOST="agents.apm.myaccount.aternity.com"
@@ -42,7 +42,7 @@ docker-compose up
 or with PowerShell:
 
 ```PowerShell
-cd Tech-Community/104-opentelemetry-zipkin-nodejs-app
+cd Tech-Community/107-opentelemetry-autoinstrumentation-nodejs-app
 
 # Configure the environement variable for the Aternity OpenTelemetry Collector
 $env:ATERNITY_SAAS_SERVER_HOST="agents.apm.myaccount.aternity.com"
