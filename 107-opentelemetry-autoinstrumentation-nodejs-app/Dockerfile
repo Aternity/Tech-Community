@@ -12,7 +12,7 @@
 #
 # - Run
 #
-#   docker run  -it -e OTEL_SERVICE_NAME="service107-js" -e OTEL_EXPORTER_OTLP_ENDPOINT="aternity-opentelemetry-collector:4317" local/service104-js:latest   
+#   docker run  -it -e OTEL_SERVICE_NAME="service107-js" -e OTEL_EXPORTER_OTLP_ENDPOINT="aternity-opentelemetry-collector:4317" local/service107-js:latest   
 
 FROM node:alpine
 
