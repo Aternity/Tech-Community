@@ -37,7 +37,7 @@ $tracerProvider =  new TracerProvider(
         $exporter
     )
 );
-$tracer = $tracerProvider->getTracer();
+$tracer = $tracerProvider->getTracer('cookbook-tracer');
 
 ############################################
 
