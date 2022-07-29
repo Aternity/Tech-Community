@@ -4,7 +4,7 @@
 #
 # Aternity Tech-Community
 # 110-opentelemetry-php-app
-# version: 22.4.11
+# version: 22.7.30
 #
 # Sample app instrumented with OpenTelemetry (https://opentelemetry.io/)
 #
