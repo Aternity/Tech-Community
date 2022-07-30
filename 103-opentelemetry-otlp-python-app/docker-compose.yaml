@@ -71,7 +71,7 @@ services:
       bash -c "
         
         # Install prepreqs
-        pip install -q opentelemetry-distro opentelemetry-exporter-otlp opentelemetry-propagator-b3 opentelemetry-instrumentation-flask flask requests  > /dev/null 2>&1 ;
+        pip install -q opentelemetry-distro[otlp] opentelemetry-instrumentation opentelemetry-instrumentation-flask flask requests  > /dev/null 2>&1 ;
         
         # Fetch the app
         curl -s -o app.py $$PY_APP_URL ;
