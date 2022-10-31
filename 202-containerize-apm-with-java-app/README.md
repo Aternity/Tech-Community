@@ -23,7 +23,7 @@ In the Aternity APM webconsole, navigate to CONFIGURE > AGENTS > Install Agents 
 
 1. Save the package of the Aternity APM Java agent for Linux in local folder, for example in "Tech-Community/202-containerize-apm-with-java-app", and rename the file as "aternity-apm-jida-linux.zip" - just removing the suffix part that is the version number.
 
-2. Download the [Dockerfile](https://raw.githubusercontent.com/Aternity/Tech-Community/tree/main/202-containerize-apm-with-java-app/Dockerfile).
+2. Download the [Dockerfile](https://raw.githubusercontent.com/Aternity/Tech-Community/main/202-containerize-apm-with-java-app/Dockerfile).
 
 3. Open a shell in your local folder, and just execute the build command.
 
