@@ -22,7 +22,7 @@
 FROM springcommunity/spring-framework-petclinic as app
 
 ###############################################################################
-# Add Aternity APM Java agent library for Linux
+# Add Aternity APM Java agent for Linux library
 ###############################################################################
 
 # 1. Fetch the package and expand the Aternity APM Java agent for Linux package
