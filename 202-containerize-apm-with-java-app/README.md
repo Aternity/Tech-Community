@@ -2,7 +2,7 @@
 
 This cookbook starts with a Java demo application that runs in a Linux container. For observability, the Aternity APM Java agent for Linux library will be containerized with the app.
 
-The Java application is the Spring PetClinic web application, framework version (see https://github.com/spring-projects/spring-petclinic.git).
+The Java application is the [Spring PetClinic](https://github.com/spring-projects/spring-petclinic.git) web app, framework version.
 
 ## Prerequisites
 
