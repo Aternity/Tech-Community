@@ -45,7 +45,7 @@ The web application should now be available on [http://localhost:8080](http://lo
 
 Then, open the url in your browser and refresh the page few times to generate some traffic.
 
-### 4. Aternity APM webconsole 
+### Step 5. Aternity APM webconsole 
 
 Go to the Aternity APM webconsole to observe the transactions of that instance.
 
