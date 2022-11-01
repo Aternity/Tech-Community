@@ -91,7 +91,7 @@ kubectl --namespace cookbook-233 get svc
 
 ## Step 6. Navigate on the app
 
-In your web browser, open the external IP address on port 8080, for example http://external-ip-address:8080, and navigate in the app to generate some traffic and application transactions.
+In your web browser, open the http url using the external IP address, for example http://external-ip-address, and navigate in the app to generate some traffic and application transactions.
 
 ## Step 7. Aternity APM webconsole 
 
