@@ -90,10 +90,17 @@ With the Cloud Shell Editor, edit the Kubernetes manifest [app-k8s.yaml](app-k8s
 
 ### 2. Deploy
 
-In the Cloud Shell Terminal, execute the following commands to deploy the application on Kubernetes and then show the external ip address of the load-balancer of the app
+In the Cloud Shell Terminal, execute the following command to deploy the application on Kubernetes.
 
 ```shell
 kubectl apply -f app_k8s.yaml
+```
+
+### 3. Check
+
+After few minutes, execute the following command to get the external ip address of the load-balancer created for the app.
+
+```shell
 kubectl --namespace cookbook-233 get svc
 ```
 
