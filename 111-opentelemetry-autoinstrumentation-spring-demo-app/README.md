@@ -2,7 +2,7 @@
 
 In this cookbook, the Java springboot demo app ([Spring PetClinic](https://github.com/spring-projects/spring-petclinic)) will be automatically instrumented by the [OpenTelemetry](https://opentelemetry.io/) Java Agent. 
 
-The agent is simply containerized with the app, and configured to export tracing to the [Aternity APM OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) that is running in an another container.
+The Java agent is simply containerized with the app (the .jar file is copied into the image), injected when the app start and configured to export tracing to the [Aternity APM OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) that is running in an another container.
 
 ![diagram](images/111-diagram.png)
 
