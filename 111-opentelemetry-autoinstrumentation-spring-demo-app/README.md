@@ -20,13 +20,13 @@ Navigate to Aternity APM (for example [https://apm.myaccount.aternity.com](https
 1. Find your **CustomerID**, for example *12341234-12341234-13241234*
 2. Grab the **SaaS Analysis Server Host**, for example *agents.apm.myaccount.aternity.com*
 
-### Step 2 - Get the sources
+### Step 2 - Get the files to run the Cookbook
 
-Download the sources, for example [right-click here](https://github.com/Aternity/Tech-Community/archive/refs/heads/main.zip) to download the zip archive, and expand it locally.
+Download the cookbook, for example [right-click here](https://github.com/Aternity/Tech-Community/archive/refs/heads/main.zip) to download the zip archive, and expand it locally.
 
 ### Step 3 - Start the containers
 
-In a shell, go to the Cookbook folder, configure the Aternity APM OpenTelemetry Collector using the environment variables, ATERNITY_SAAS_SERVER_HOST and ATERNITY_CUSTOMER_ID, and starts all the containers with docker-compose.
+Open a shell and go to the Cookbook folder. Configure the Aternity APM OpenTelemetry Collector using the environment variables, ATERNITY_SAAS_SERVER_HOST and ATERNITY_CUSTOMER_ID, and start all the containers with docker-compose.
 
 For example using Bash:
 
