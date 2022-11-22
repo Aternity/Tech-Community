@@ -2,13 +2,13 @@
 
 In this cookbook, the Java springboot demo app ([Spring PetClinic](https://github.com/spring-projects/spring-petclinic)) will be automatically instrumented by the [OpenTelemetry](https://opentelemetry.io/) Java Agent. 
 
-The Java agent is simply containerized with the app (the .jar file is copied into the image), injected when the app start and configured to export tracing to the [Aternity APM OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) that is running in an another container.
+The Java agent is simply containerized with the app (the .jar file is copied into the image), injected when the app start and configured to export tracing to the [Alluvio Aternity APM OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) that is running in an another container.
 
 ![diagram](images/111-diagram.png)
 
 ## Prerequisites
 
-1. an Aternity APM account (SaaS)
+1. an account is Alluvio Aternity APM (SaaS)
 2. a Docker host, for example [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
 ## Step by step
@@ -59,9 +59,9 @@ docker-compose up
 
 Open the url http://localhost:8080 in the web browser and navigate through the app.
 
-Aternity APM collects the telemetry the java agent is sending. Every transaction and every OpenTelemetry span can be found in the Search tab.
+Alluvio Aternity APM collects the telemetry the java agent is sending. Every transaction and every OpenTelemetry span can be found in the Search tab.
 
-![Aternity APM OpenTelemetry traces](images/aternity-opentelemetry-service111-java-transactions.png)
+![Alluvio Aternity APM OpenTelemetry traces](images/alluvio-aternity-opentelemetry-service111-java-transactions.png)
 
 ## Notes 
 
