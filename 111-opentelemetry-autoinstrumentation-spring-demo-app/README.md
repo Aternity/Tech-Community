@@ -2,7 +2,7 @@
 
 This cookbook demonstrates how [Alluvio Aternity DEM](https://www.riverbed.com/products/digital-experience-management) collects [OpenTelemetry](https://opentelemetry.io/) traces from a Java app using auto-instrumentation.
 
-To instrument the Java Spring Boot demo app ([Spring PetClinic](https://github.com/spring-projects/spring-petclinic)), the OpenTelemetry Java agent is simply containerized with the app (the .jar file is copied into the image), injected when the app start and configured to export tracing to the SaaS backend via the [Alluvio Aternity APM OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) that is running in an another container.
+To instrument the Java Spring Boot demo app ([Spring PetClinic](https://github.com/spring-projects/spring-petclinic)), the OpenTelemetry Java agent is simply containerized with the app (the .jar file is copied into the image), injected when the app start and configured to export tracing to the Alluvio Aternity APM SaaS backend via the [Alluvio Aternity OpenTelemetry Collector](https://hub.docker.com/r/aternity/apm-collector) that is running in an another container.
 
 ![diagram](images/111-diagram.png)
 
