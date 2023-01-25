@@ -29,7 +29,9 @@ In the [Google Cloud Console](https://console.cloud.google.com) retrieve the det
 1. Project id, for example: *aternity-cookbooks*
 2. Kubernetes Engine cluster name, for example: *autopilot-cluster-1*
 3. Region, for example: *europe-west9*
-4. Artifact Registry repository name, for example: *aternity-apm*
+4. Artifact Registry repository name, for example: *apm*
+
+> :warning: The repository must be created with Docker format and preferably in the same region as the GKE cluster
 
 ## Step 3. Store the APM package in a Bucket Storage
 
@@ -73,7 +75,7 @@ Where:
 For example
 
 ```shell
-gcloud builds submit --config cloudbuild.yaml --substitutions _APM_PACKAGE_GSUTIL_URI=gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516.zip,_REGION=europe-west9,_REPOSITORY=aternity-apm
+gcloud builds submit --config cloudbuild.yaml --substitutions _APM_PACKAGE_GSUTIL_URI=gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516.zip,_REGION=europe-west9,_REPOSITORY=apm
 ```
 
 Based on the [Dockerfile](Dockerfile), it is building a Docker image that will contain the Java application and the Aternity APM Java agent library for Linux. When the build is done, the image will be stored in the Artifact Registry.
@@ -86,7 +88,7 @@ With the Cloud Shell Editor, edit the Kubernetes manifest [app-k8s.yaml](app-k8s
 
    - **Customer Id** in the variable RVBD_CUSTOMER_ID, for example *12341234-12341234-13241234*
    - **SaaS Psockets Server host** in the variable RVBD_ANALYSIS_SERVER, for example *psockets.apm.my_environment.aternity.com*
-   - **Image Path** in the deployment section replacing the token {cookbook-233 image}, for example: *europe-west9-docker.pkg.dev/aternity-cookbooks/aternity-apm/cookbook-233:latest*
+   - **Image Path** in the deployment section replacing the token {cookbook-233 image}, for example: *europe-west9-docker.pkg.dev/aternity-cookbooks/apm/cookbook-233:latest*
 
 ### 2. Deploy
 
