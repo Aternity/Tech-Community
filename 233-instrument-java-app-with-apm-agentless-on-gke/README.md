@@ -113,7 +113,7 @@ In your web browser, open the http url using the external IP address, for exampl
 
 ## Step 7. ALLUVIO Aternity APM webconsole 
 
-Go to the APM webconsole to observe the application with every transaction and every instance.
+Go to the APM webconsole to observe the application, every instance and every transaction.
 
 ## Cleanup
 
