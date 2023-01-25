@@ -30,14 +30,15 @@ In the [Google Cloud Console](https://console.cloud.google.com) retrieve the det
 2. Kubernetes Engine cluster name, for example: *autopilot-cluster-1*
 3. Region, for example: *europe-west9*
 4. Artifact Registry repository name, for example: *apm*
+5. Bucket name, for example: *my_bucket*
 
 > :warning: The repository must be created with Docker format and preferably in the same region as the GKE cluster
 
-## Step 3. Store the APM package in a Bucket Storage
+## Step 3. Store the APM Agentless package in a Bucket Storage
 
-In the [Google Cloud Console](https://console.cloud.google.com), navigate to the [Cloud Storage ](https://console.cloud.google.com/storage/browser). Select the GCP project and create a Bucket with Docker format and pick the same region as the Kubernetes cluster.
+In the [Google Cloud Console](https://console.cloud.google.com), navigate to the [Cloud Storage ](https://console.cloud.google.com/storage/browser). then select the GCP project and the Bucket.
 
-There, upload the .zip package of the Aternity APM Agentless Instrumentation (Java) and grab the **gsutil URI** for the next steps, for example *gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516.zip*
+There, upload the .zip package of the **Aternity APM Agentless Instrumentation (Java)** and grab the **gsutil URI** for the next steps, for example *gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516.zip*
 
 ## Step 4.Containerize the app with the APM Agentless files
 
