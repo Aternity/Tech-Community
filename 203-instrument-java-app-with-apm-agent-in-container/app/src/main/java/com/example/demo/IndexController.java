@@ -8,15 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class IndexController {
 
-  @GetMapping("/index")
-  public String index(
-    @RequestParam(
-      name = "name",
-      required = false,
-      defaultValue = "Home"
-    ) String name, Model model
-  ) {
-    model.addAttribute("name", name);
-    return "Home";
+  @GetMapping("/")
+  public String index(@RequestParam(name="name", required=false, defaultValue="anonymous") String name, Model model) {
+    model.addAttribute("name", name);  
+    return "index";
   }
 }
