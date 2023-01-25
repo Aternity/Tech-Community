@@ -27,7 +27,7 @@ Then in CONFIGURE > AGENTS > Configurations,
 2. Copy the agent package appinternals_agent_latest_linux.gz in the subfolder apm-customization.
 3. Copy the configuration file (prepared in Step 1.) into the subfolder apm-customization/config.
    
-4. *optional* if the name of the configuration file not configuration.json then edit the initial-mapping to adapt the startup autoinstrumentation mapping 
+> :warning: if the name of the configuration file is not configuration.json then edit the initial-mapping to adapt the startup autoinstrumentation mapping 
 
 ## Step 3. Start the containers
 
