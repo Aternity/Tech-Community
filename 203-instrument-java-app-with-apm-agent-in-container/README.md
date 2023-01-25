@@ -9,13 +9,13 @@ In this cookbook, the full APM agent is installed inside the container image of 
 1. a SaaS account for [ALLUVIO Aternity APM](https://www.riverbed.com/products/application-performance-monitoring)
 2. a Docker host, for example [Docker Desktop](https://www.docker.com/products/docker-desktop)
 
-## Step 1. Get installation details in ALLUVIO Aternity APM
+## Step 1. Get installation details in ALLUVIO Aternity APM webconsole
 
-In the ALLUVIO Aternity APM webconsole, navigate to CONFIGURE > AGENTS > Install Agents to see the Agent Installation Steps section.
+In the APM webconsole, navigate to CONFIGURE > AGENTS > Install Agents to see the Agent Installation Steps section.
 
 1. Find your **Customer Id**, for example *12341234-12341234-13241234*
 2. Find the **SaaS Analysis Server Host**, for example *agents.apm.my_environment.aternity.com*
-3. Download the latest **ALLUVIO Aternity APM Java agent for Linux** package (also available on [Riverbed support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)), *appinternals_agent_latest_linux.gz*
+3. Download the latest **Aternity APM agent for Linux** package (also available on [Riverbed support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)), *appinternals_agent_latest_linux.gz*
 
 Then in CONFIGURE > AGENTS > Configurations, 
 
