@@ -46,7 +46,7 @@ In the Cloud Shell terminal, run the commands to go to the cookbook folder, sele
 ```shell
 cd 233-instrument-java-app-with-apm-agentless-on-gke
 gcloud config set project {PROJECT_ID}
-gcloud container clusters get-credentials {CLUSTER NAME} --region {REGION}--project {PROJECT_ID}
+gcloud container clusters get-credentials {CLUSTER NAME} --region {REGION} --project {PROJECT_ID}
 ```
 
 For example
