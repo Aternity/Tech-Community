@@ -14,9 +14,9 @@ With this setup, the pods and nodes of the Kubernetes cluster can scaleout, the 
 
 [![Open in Cloud Shell](https://www.gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/Aternity/Tech-Community&tutorial=233-instrument-java-app-with-apm-agentless-on-gke/README.md)
 
-## Step 1. Get ALLUVIO Aternity APM details
+## Step 1. Get APM details in ALLUVIO Aternity APM
 
-In the ALLUVIO Aternity APM webconsole, navigate to CONFIGURE > AGENTS > Install Agents and in the Agent Installation Steps section,
+In the APM webconsole, navigate to CONFIGURE > AGENTS > Install Agents and in the Agent Installation Steps section,
 
 1. Find your **Customer Id**, for example *12341234-12341234-13241234*
 2. Find the **SaaS Analysis Server Host** and obtain the **SaaS Psockets Server host** replacing *agents* by *psockets*. For example if the analysis server host is *agents.apm.my_environment.aternity.com* then the SaaS Psockets Server host is *psockets.apm.my_environment.aternity.com*
@@ -35,9 +35,9 @@ In the [Google Cloud Console](https://console.cloud.google.com) retrieve the det
 
 In the [Google Cloud Console](https://console.cloud.google.com), navigate to the [Cloud Storage ](https://console.cloud.google.com/storage/browser). Select the GCP project and create a Bucket with Docker format and pick the same region as the Kubernetes cluster.
 
-There, upload the package of the Aternity APM Java agent library for Linux (.zip file) and grab the **gsutil URI** for the next steps, for example *gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516*
+There, upload the .zip package of the Aternity APM Agentless Instrumentation (Java) and grab the **gsutil URI** for the next steps, for example *gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516.zip*
 
-## Step 4.Containerize ALLUVIO Aternity APM Java agent with the app
+## Step 4.Containerize the app with the APM Agentless files
 
 ### 1. Prepare to build
 
@@ -73,7 +73,7 @@ Where:
 For example
 
 ```shell
-gcloud builds submit --config cloudbuild.yaml --substitutions _APM_PACKAGE_GSUTIL_URI=gs://my_bucket/aternity-apm-jida-linux-12.18.0_BL546.zip,_REGION=europe-west9,_REPOSITORY=aternity-apm
+gcloud builds submit --config cloudbuild.yaml --substitutions _APM_PACKAGE_GSUTIL_URI=gs://my_bucket/aternity-apm-jida-linux-12.19.0_BL516.zip,_REGION=europe-west9,_REPOSITORY=aternity-apm
 ```
 
 Based on the [Dockerfile](Dockerfile), it is building a Docker image that will contain the Java application and the Aternity APM Java agent library for Linux. When the build is done, the image will be stored in the Artifact Registry.
