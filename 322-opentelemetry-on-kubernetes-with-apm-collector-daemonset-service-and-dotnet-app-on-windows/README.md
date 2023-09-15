@@ -75,11 +75,8 @@ For example, execute the following command in a terminal
 # Go to the cookbook directory
 cd 322-opentelemetry-on-kubernetes-with-apm-collector-daemonset-service-and-dotnet-app-on-windows
 
-# Go the app folder
-cd dotnet_webapp
-
 # Build
-docker build --tag dotnet_webapp:23.9.15 .
+docker build --tag dotnet_webapp:23.9.15 dotnet_webapp\.
 ```
 
 3. Configure the instrumentation with the OTLP endpoint and run the app
