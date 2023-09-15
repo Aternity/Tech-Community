@@ -65,15 +65,24 @@ kubectl --namespace alluvio-aternity get service
 
 On you Windows machine enabled with a Docker runtime,
 
-1. Build the Windows container image
+1. Fetch the cookbook, for example hit the link to [download the full Tech Community zip archive](https://github.com/Aternity/Tech-Community/archive/refs/heads/main.zip) and expand the zip archive
+
+2. Build the Windows container image
 
 For example, execute the following command in a terminal
 
 ```PowerShell
+# Go to the cookbook directory
+cd 322-opentelemetry-on-kubernetes-with-apm-collector-daemonset-service-and-dotnet-app-on-windows
+
+# Go the app folder
+cd dotnet_webapp
+
+# Build
 docker build --tag dotnet_webapp:23.9.15 .
 ```
 
-2. Configure the instrumentation with the OTLP endpoint and run the app
+3. Configure the instrumentation with the OTLP endpoint and run the app
 
 In the command below, replace {{ APM Collector - OTLP Endpoint }} with the actual endpoint exposed by the APM Collector, and execute it to run the app
 
@@ -87,7 +96,7 @@ For example, using 10.0.0.80 for the external IP Address obtained in the previou
 docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="http://10.0.0.80:4317" --publish 8080:80 dotnet_webapp:23.9.15
 ```
 
-3. Open a local browser, open the app on http://127.0.0.1:8080, and navigate multiple times on the different menus to generate some traces
+4. Open a local browser, open the app on http://127.0.0.1:8080, and navigate multiple times on the different menus to generate some traces
 
 
 ## Step 4. Observe the traces in ALLUVIO Aternity APM webconsole 
