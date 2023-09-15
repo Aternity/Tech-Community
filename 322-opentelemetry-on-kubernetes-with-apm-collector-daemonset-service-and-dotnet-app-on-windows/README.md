@@ -1,10 +1,8 @@
 # 322-opentelemetry-on-kubernetes-with-apm-collector-daemonset-service-and-dotnet-app-on-windows
 
-This cookbook for ALLUVIO Aternity shows how the [APM Collector](https://hub.docker.com/r/aternity/apm-collector) can be deployed on a Kubernetes cluster and exposed as a service.
-For example, it can be used in a managed Kubernetes cluster in your favorite Cloud, like Azure AKS, AWS EKS or Google GKE.
+This cookbook shows how the [APM Collector](https://hub.docker.com/r/aternity/apm-collector) of ALLUVIO Aternity can be deployed on a Kubernetes cluster and exposed as a service, so that, workloads that are outside the cluster, like a Windows virtual machine, can be instrumented with [OpenTelemetry](https://opentelemetry.io) and export the telemetry to the APM Collector.
 
-The workloads that are outside the cluster, like Windows virtual machine or bare-metal machine, can be instrumented with [OpenTelemetry](https://opentelemetry.io) and export the telemetry to the APM Collector.
-In this cookbook, a simple [.NET](https://dotnet.microsoft.com) webapp instrumented with [OpenTelemetry](https://opentelemetry.io), is containerized as a Windows container.
+The cookbook requires a Kubernetes cluster. It can be in the Cloud, like Azure AKS, AWS EKS or Google GKE. And it requires a Windows host, that can be in the same network as the cluster. After deploying the APM Collector in the Kubernetes cluster, a simple [.NET](https://dotnet.microsoft.com) webapp that is instrumented with [OpenTelemetry](https://opentelemetry.io) will be containerized as a Windows container to run on the Windows host.
 
 ![Cookbook 322](images/cookbook-322.png)
 
@@ -53,9 +51,9 @@ kubectl apply -f apm-collector-daemonset.yaml
 kubectl apply -f apm-collector-daemonset-service.yaml
 ```
 
-4. Wait a bit until the resources are ready, and find the external IP Address of the service
+4. Wait a bit until the resources are ready, and find the IP Address of the service
 
-For example run the following command:
+For example, run the following command to s:
 
 ```shell
 kubectl --namespace alluvio-aternity get service
@@ -87,7 +85,7 @@ In the command below, replace {{ APM Collector - OTLP Endpoint }} with the actua
 docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="{{ APM Collector - OTLP Endpoint }}" --publish 8080:80 dotnet_webapp:23.9.15
 ```
 
-For example, using 10.0.0.80 for the external IP Address obtained in the previous step,
+For example, using 10.0.0.80 for the IP Address of the service (obtained in the previous step).
 
 ```PowerShell
 docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="http://10.0.0.80:4317" --publish 8080:80 dotnet_webapp:23.9.15
