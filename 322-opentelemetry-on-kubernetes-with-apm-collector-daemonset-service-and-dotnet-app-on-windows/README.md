@@ -14,7 +14,7 @@ In this cookbook, a simple [.NET](https://dotnet.microsoft.com) webapp instrumen
 
 2. a Kubernetes cluster ready and manageable using kubectl CLI
 
-3. a Windows host with a Docker runtime, for example [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+3. a Windows host enabled with a Docker runtime, for example [Docker Desktop](https://www.docker.com/products/docker-desktop/) on a Windows Server virtual machine
 
 ## Step 1. Get the details for ALLUVIO Aternity APM
 
