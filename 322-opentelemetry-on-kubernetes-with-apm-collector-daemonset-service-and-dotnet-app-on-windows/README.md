@@ -78,7 +78,7 @@ docker build --tag dotnet_webapp:23.9.15 .
 In the command below, replace {{ APM Collector - OTLP Endpoint }} with the actual endpoint exposed by the APM Collector, and execute it to run the app
 
 ```PowerShell
-docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="{{ APM Collector - OTLP Endpoint }} " --publish 8080:80 dotnet_webapp:23.9.15
+docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="{{ APM Collector - OTLP Endpoint }}" --publish 8080:80 dotnet_webapp:23.9.15
 ```
 
 For example, using 10.0.0.80 for the external IP Address obtained in the previous step,
