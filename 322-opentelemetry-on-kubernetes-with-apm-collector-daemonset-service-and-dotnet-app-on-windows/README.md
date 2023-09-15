@@ -92,11 +92,11 @@ docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="http://10.0.0.80:4317" 
 
 ## Step 4. Observe the traces in ALLUVIO Aternity APM webconsole 
 
-In the APM webconsole, open the menu and go the "Search" view to find all the OpenTelemetry traces of the app. 
+In the APM webconsole, open the menu and go to the "Search" view to find all the OpenTelemetry traces of the app. 
 
-The view allows to filter the transactions based on traces attributes.
+The view allows to filter based on the traces attributes.
 
-For example, the traces of the app can be found with the following query that keeps traces of any .NET applications instrumented by OpenTelemetry.
+For example, the traces of the app can be found with the following query that keeps traces of any applications coded in .NET.
 
 ```query
 telemetry.sdk.language=dotnet
