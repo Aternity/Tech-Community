@@ -87,7 +87,7 @@ For example, using 10.0.0.80 for the external IP Address obtained in the previou
 docker run --tty --rm --env OTEL_EXPORTER_OTLP_ENDPOINT="http://10.0.0.80:4317" --publish 8080:80 dotnet_webapp:23.9.15
 ```
 
-3. Open a local browser, open the app http://127.0.0.1:8080, and navigate multiple times on the different menu to generate some traces
+3. Open a local browser, open the app on http://127.0.0.1:8080, and navigate multiple times on the different menus to generate some traces
 
 
 ## Step 4. Observe the traces in ALLUVIO Aternity APM webconsole 
