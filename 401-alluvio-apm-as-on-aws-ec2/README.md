@@ -15,6 +15,9 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 
 In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server. It will open the deployment template wizard in the AWS CloudFormation console.
 
+
+<div align="center">
+  
 | AWS Region | Quick Start |
 | --- | --- | 
 | us-west-1 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/create/review?templateURL=TEMPLATE1&stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2) |
@@ -30,6 +33,8 @@ In the following table, hit the "Launch Stack" button of the region where you wa
 | ap-northeast-3 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-3#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | ap-southeast-1 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | ap-southeast-2 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
+
+</div>
 
 ## Step 2. Deploy using CloudFormation
 
@@ -62,6 +67,8 @@ From the [Riverbed Support page](https://support.riverbed.com/content/support/so
 
 The the following table contains the "Launch Stack" buttons that launch custom deployment.
 
+<div align="center">
+
 | AWS Region | Custom |
 | --- | --- | 
 | us-west-1 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2-Custom&templateURL=TEMPLATE2) |
@@ -77,6 +84,8 @@ The the following table contains the "Launch Stack" buttons that launch custom d
 | ap-northeast-3 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-3#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2-Custom&templateURL=TEMPLATE2) |
 | ap-southeast-1 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2-Custom&templateURL=TEMPLATE2) |
 | ap-southeast-2 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2-Custom&templateURL=TEMPLATE2) |
+
+</div>
 
 > [!NOTE]
 > As a **Quick Start** deployment, the **Custom** deployment will deploy the ALLUVIO APM Analysis Server on an EC2 instance. While the **Quick Start** uses default network configuration, the **Custom** has more parameters allowing to customize the network configuration, for example selecting the subnet and the security group.
