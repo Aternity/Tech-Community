@@ -11,7 +11,7 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 > [!TIP]
 > To get the installer package and more details, check on the [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* 
 
-## Step 1. Launch in region
+## Ju Launch in region
 
 In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server.
 
@@ -37,7 +37,13 @@ It will open the deployment template wizard in the AWS CloudFormation console.
 
 </div>
 
-## Step 2. Deploy using CloudFormation
+## FAQ
+
+### How to get a temporary URL for the installer package?
+
+From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) chek for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* and download the installer package. Then you can upload it in a storage of your choice from which you can generate temporary and secure URL. For example, in a AWS S3 bucket.
+
+### In the CloudFormation console, how to create the stack?
 
 In the section "ALLUVIO APM Analysis Installer", enter the **URL** (and optionally the **checksum**).
 
@@ -47,23 +53,17 @@ Then scroll down and hit the **Create Stack** button
 > - The Create Stack button starts the deployment the ALLUVIO APM Analysis Server on an EC2 instance in the selected region, i.e. a Virtual Machine in AWS.
 > - Optionally, in the section "EC2 Instance Configuration" you can select different sizing for the EC2 instance.
 
-## Step 3. Connect to the APM AS console
+## How to connect to the APM AS console?
 
-After few minutes, the deployment is complete and you should be able to connect to APM Analysis Server. 
+The stack creation takes just few minutes, usually less than 5 minutes. When it is complete, you should be able to connect to APM Analysis Server. 
 
-In a browser open the Public URL or Private URL, that would look like this:
+In a browser open the Public URL or Private URL, that look like this:
 - **Public URL**: [https://ec2-your-instance-ip.your_region.compute.amazonaws.com](https://ec2-your-instance.your_region.compute.amazonaws.com)
 - **Private URL**: [https://ec2-your-instance-ip.your_region.compute.internal](https://ec2-your-instance.your_region.compute.internal)
 
 > [!TIP]
 > - To find the actual **Public URL** or **Private URL**, just go to the Outputs tabs of the cloudformation stack, or else go the EC2 service and find the instance named **ALLUVIO APM Analysis Server**
 > - if you cannot reach the page, check the port 443 is open and your browser has connectivity. Typically the security group associated to the EC2 might be blocking port 443.
-
-## Questions
-
-### How to get a temporary URL for the installer package?
-
-From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) chek for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* and download the installer package. Then you can upload it in a storage of your choice from which you can generate temporary and secure URL. For example, in a AWS S3 bucket.
 
 ### How can I customize the install?
 
