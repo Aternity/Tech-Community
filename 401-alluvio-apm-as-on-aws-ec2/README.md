@@ -15,7 +15,7 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 
 In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server.
 
-It will open the deployment template wizard in the AWS CloudFormation console.
+It will open the deployment wizard in the AWS CloudFormation console. There, just fill the parameters and hit the **Create Stack** button.
 
 <div align="center">
   
