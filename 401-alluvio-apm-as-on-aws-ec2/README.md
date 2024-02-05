@@ -41,7 +41,7 @@ It will open the deployment wizard in the AWS CloudFormation console. There, jus
 
 ### How to get a temporary URL for the installer package?
 
-From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) chek for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* and download the installer package. Then you can upload it in a storage of your choice from which you can generate temporary and secure URL. For example, in a AWS S3 bucket.
+From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* and download the installer package. Then you can upload it in a storage of your choice from which you can generate temporary and secure URL. For example, in a AWS S3 bucket.
 
 ### In the CloudFormation console, how to create the stack?
 
@@ -62,12 +62,12 @@ In a browser open the Public URL or Private URL, that look like this:
 - **Private URL**: [https://ec2-your-instance-ip.your_region.compute.internal](https://ec2-your-instance.your_region.compute.internal)
 
 > [!TIP]
-> - To find the actual **Public URL** or **Private URL**, just go to the Outputs tabs of the cloudformation stack, or else go the EC2 service and find the instance named **ALLUVIO APM Analysis Server**
+> - To find the actual **Public URL** or **Private URL**, just go to the Outputs tabs of the AWS CloudFormation stack, or else go the EC2 service and find the instance named **ALLUVIO APM Analysis Server**
 > - if you cannot reach the page, check the port 443 is open and your browser has connectivity. Typically the security group associated to the EC2 might be blocking port 443.
 
 ### How can I customize the install?
 
-The the following table contains the "Launch Stack" buttons that launch custom deployment.
+The following table contains the "Launch Stack" buttons that launch custom deployment.
 
 <div align="center">
 
