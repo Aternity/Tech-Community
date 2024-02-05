@@ -11,7 +11,7 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 > [!TIP]
 > To get the installer package and more details, check on the [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* 
 
-## Ju Launch in region
+## Launch the statck in a region
 
 In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server.
 
