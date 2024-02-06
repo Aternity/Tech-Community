@@ -80,7 +80,7 @@ Go to [Riverbed Support](https://support.riverbed.com/content/support/software/a
 
 ### In the CloudFormation console, how to create the stack?
 
-After filling the parameters that are required for the deployment, for example the **URL** and **checksum** in the section "ALLUVIO APM Analysis Installer", and having configured other section, for example in the section "EC2 Instance Configuration" you can select different sizing for the EC2 instance, just scroll down and hit the **Create Stack** button.
+After filling the parameters that are required for the deployment, for example the **URL** and the **checksum** of the installer in the section "ALLUVIO APM Analysis Installer", and having configured other section, for example in the section "EC2 Instance Configuration" you can select different sizing for the EC2 instance, just scroll down and hit the **Create Stack** button.
 
 <div align="center">
 <img src="images/alluvio-apm-as-on-aws-ec2_create-stack-quickstart.png" alt="APM AS on AWS EC2 Create Stack" width="70%" height="auto">
