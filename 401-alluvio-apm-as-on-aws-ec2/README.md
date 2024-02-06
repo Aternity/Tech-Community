@@ -2,7 +2,9 @@
 
 This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in few clicks.
 
-<img src="images/alluvio-apm-as-on-aws-ec2_login.png" alt="APM AS on AWS EC2" style="width:80%;height:auto;">
+<div align="center">
+<img src="images/alluvio-apm-as-on-aws-ec2_login.png" alt="APM AS on AWS EC2" width="80%" height="auto">
+</div>
 
 ## Prerequisites
 
