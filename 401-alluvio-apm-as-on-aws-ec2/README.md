@@ -21,8 +21,6 @@ In the following table, hit the **Launch Stack** button of the region where you 
 
 It will open the wizard of the **Quick Start** deployment in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet.
 
-If you need more customization, use the Launch Stack button in the [Custom Deployment](#custom-deployment) in the section below.
-
 <div align="center">
   
 | AWS Region | Quick Start |
@@ -42,6 +40,10 @@ If you need more customization, use the Launch Stack button in the [Custom Deplo
 | ap-southeast-2 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 
 </div>
+
+> [!TIP]
+> If you need more customization (Subnet/VPC, Security Group,...) see the [Custom Deployment](#custom-deployment) in the section below.
+
 
 ## Custom deployment
 
