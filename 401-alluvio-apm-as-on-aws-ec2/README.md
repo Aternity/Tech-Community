@@ -13,6 +13,7 @@ This cookbook deploys the ALLUVIO Aternity APM Analysis Server in your own AWS a
 3. The checksum of the installer package, for example "123412341234..."
 
 > [!TIP]
+> - See [](#how-to-get-a-temporary-URL-for-the-installer-package?
 > To get the installer package and more details, check on the [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* 
 
 ## Quick Start
@@ -72,7 +73,11 @@ As the **Quick Start** deployment, the **Custom** deployment will install the AL
 
 ### How to get a temporary URL for the installer package?
 
-From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* and download the installer package. Then you can upload it in a storage of your choice from which you can generate temporary and secure URL. For example, in a AWS S3 bucket.
+From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer)* and download the latest version of the installer package. Then you can upload it in a storage of your choice from which you can generate temporary and secure URL. For example, in a AWS S3 bucket.
+
+### How to find the checksum of the installer
+
+Go to [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html), check for *Aternity APM Analysis Server (Linux Installer)* and download the the checksum file. It is a text file that contains the required checksum.
 
 ### In the CloudFormation console, how to create the stack?
 
