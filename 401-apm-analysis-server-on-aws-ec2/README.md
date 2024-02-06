@@ -64,7 +64,7 @@ It is ready after just few minutes (usually less than 5 minutes) and you can con
 
 ### How to get a temporary URL for the installer package and the checksum?
 
-From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer)* and download the latest version of the installer package. Then you can upload it in a storage of your choice, for example in a AWS S3 Bucket from which you can generate a temporary URL. Whether private or public the must be accessible to the EC2 instance.
+From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer)* and download the latest version of the installer package. Then you can upload it in a storage of your choice, for example in a AWS S3 Bucket from which you can generate a temporary URL. Whether private or public, the URL must be accessible to the EC2 instance.
 
 On the same [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html), you can download the checksum file. It is a text file that contains the required checksum.
 
