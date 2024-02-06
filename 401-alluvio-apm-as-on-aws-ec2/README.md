@@ -11,11 +11,11 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 > [!TIP]
 > To get the installer package and more details, check on the [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* 
 
-## Launch the stack in a region
+## Quick Start
 
-In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server.
+In the following table, hit the **Launch Stack** button of the region where you want to deploy the APM Analysis Server.
 
-It will open the deployment wizard in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet. For more customization, use the Launch Stack button in the [how to customize](#how-to-customize) in the Q&A section below.
+It will open the wizard fir the **Quick Start** deployment in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet. For more customization, use the Launch Stack button in the [how to customize](#how-to-customize) in the Q&A section below.
 
 <div align="center">
   
