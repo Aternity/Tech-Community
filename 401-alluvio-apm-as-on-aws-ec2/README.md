@@ -99,7 +99,7 @@ When the stack is created, usually in less than 5 minutes, you should be able to
 > [!TIP]
 > - To find the actual **Public URL** or **Private URL**, just go to the Outputs tabs of the AWS CloudFormation stack, or else go the EC2 service and find the instance named **ALLUVIO APM Analysis Server**
 > - If you cannot reach the page, check the port 443 is open and the connectivity. Typically the Security Group associated to the EC2 might be blocking port 443
-> - For the login / password, check the guide on [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)
+> - For the login / password, refer to the User Guide on [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)
 
 #### License
 
