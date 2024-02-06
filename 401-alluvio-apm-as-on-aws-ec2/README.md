@@ -13,8 +13,7 @@ This cookbook deploys the ALLUVIO Aternity APM Analysis Server in your own AWS a
 3. The checksum of the installer package, for example "123412341234..."
 
 > [!TIP]
-> - See [](#how-to-get-a-temporary-URL-for-the-installer-package?
-> To get the installer package and more details, check on the [Riverbed Support](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) for *Aternity APM Analysis Server (Linux Installer) version 2023.11.0* 
+> Check the [Cookbook FAQ](#FAQ) and if needed refer to the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)
 
 ## Quick Start
 
