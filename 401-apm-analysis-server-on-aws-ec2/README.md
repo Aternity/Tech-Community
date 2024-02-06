@@ -23,7 +23,7 @@ Then follow the wizard in your AWS CloudFormation console. There, just enter the
 
 <div align="center">
   
-| AWS Region | Quick Start |
+|   | AWS Region | Quick Start |
 | --- | --- | --- | 
 | us-west-1 | US West (N. California) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-1#/stacks/create/review?templateURL=TEMPLATE1&stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2) |
 | us-west-2 | US West (Oregon) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
