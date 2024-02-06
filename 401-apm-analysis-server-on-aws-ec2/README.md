@@ -9,8 +9,8 @@ This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/produc
 ## Prerequisites
 
 1. an AWS Account
-2. a temporary URL of the APM Analysis Server installer package, for example https://yourstorage.com/folder/installer.tar?token=123&validity=12
-3. the checksum of the installer package, for example "123412341234..."
+2. a temporary URL of the APM Analysis Server installer package, for example *https://yourstorage.com/folder/installer.tar?token=123&validity=12*
+3. the checksum of the installer package, for example *123412341234...*
 
 > [!TIP]
 > Check the [Cookbook FAQ](#FAQ) and refer to the [Riverbed Support website](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)
