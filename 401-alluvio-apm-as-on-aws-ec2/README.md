@@ -15,7 +15,7 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 
 In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server.
 
-It will open the deployment wizard in the AWS CloudFormation console. There, just fill the parameters and hit the **Create Stack** button.
+It will open the deployment wizard in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in the default VPC and Subnet. For more customization, use the Launch Stack button for custom deployment in the in the [Q&A section below](#how-to-customize-the-vpc).
 
 <div align="center">
   
@@ -45,7 +45,7 @@ From the [Riverbed Support page](https://support.riverbed.com/content/support/so
 
 ### In the CloudFormation console, how to create the stack?
 
-In the section "ALLUVIO APM Analysis Installer", enter the **URL** (and optionally the **checksum**).
+In the section "ALLUVIO APM Analysis Installer", enter the **URL** and **checksum**
 
 Then scroll down and hit the **Create Stack** button
 
@@ -65,9 +65,11 @@ In a browser open the Public URL or Private URL, that look like this:
 > - To find the actual **Public URL** or **Private URL**, just go to the Outputs tabs of the AWS CloudFormation stack, or else go the EC2 service and find the instance named **ALLUVIO APM Analysis Server**
 > - if you cannot reach the page, check the port 443 is open and your browser has connectivity. Typically the security group associated to the EC2 might be blocking port 443.
 
-### How can I customize the install?
+### How to customize the deployment?
 
 The following table contains the "Launch Stack" buttons that launch custom deployment.
+
+As a **Quick Start** deployment, the **Custom** deployment will deploy the ALLUVIO APM Analysis Server on an EC2 instance. While the **Quick Start** uses default network configuration, the **Custom** has more parameters allowing to customize the network configuration, for example selecting the VPC/subnet and the security group.
 
 <div align="center">
 
@@ -88,9 +90,6 @@ The following table contains the "Launch Stack" buttons that launch custom deplo
 | ap-southeast-2 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2-Custom&templateURL=TEMPLATE2) |
 
 </div>
-
-> [!NOTE]
-> As a **Quick Start** deployment, the **Custom** deployment will deploy the ALLUVIO APM Analysis Server on an EC2 instance. While the **Quick Start** uses default network configuration, the **Custom** has more parameters allowing to customize the network configuration, for example selecting the subnet and the security group.
 
 #### License
 
