@@ -15,7 +15,7 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 
 In the following table, hit the "Launch Stack" button of the region where you want to deploy the APM Analysis Server.
 
-It will open the deployment wizard in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in the default VPC and Subnet. For more customization, use the Launch Stack button for custom deployment in the in the [Q&A section below](#how-to-customize-the-vpc).
+It will open the deployment wizard in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in the default VPC and Subnet. For more customization, use the Launch Stack button for custom deployment in the in the [Q&A section below](#how-to-customize).
 
 <div align="center">
   
@@ -65,7 +65,7 @@ In a browser open the Public URL or Private URL, that look like this:
 > - To find the actual **Public URL** or **Private URL**, just go to the Outputs tabs of the AWS CloudFormation stack, or else go the EC2 service and find the instance named **ALLUVIO APM Analysis Server**
 > - if you cannot reach the page, check the port 443 is open and your browser has connectivity. Typically the security group associated to the EC2 might be blocking port 443.
 
-### How to customize the deployment?
+### How to customize?
 
 The following table contains the "Launch Stack" buttons that launch custom deployment.
 
