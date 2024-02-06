@@ -44,9 +44,9 @@ It will open the wizard of the **Quick Start** deployment in the AWS CloudFormat
 
 ## Custom deployment
 
-The following table contains the "Launch Stack" buttons that launch custom deployment.
+The following table contains the "Launch Stack" buttons for **Custom** deployment.
 
-As a **Quick Start** deployment, the **Custom** deployment will install the ALLUVIO APM Analysis Server on an EC2 instance. While the **Quick Start** uses default network configuration, the **Custom** has more parameters that allow to customize the configuration in AWS, for example selecting the VPC/Subnet and the Security Group.
+As the **Quick Start** deployment, the **Custom** deployment will install the ALLUVIO APM Analysis Server on an EC2 instance in the selected region. While the **Quick Start** uses default network configuration, the **Custom** has more parameters. For example it allows to configure the VPC/Subnet and the Security Group to use.
 
 <div align="center">
 
