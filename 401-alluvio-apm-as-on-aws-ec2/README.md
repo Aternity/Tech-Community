@@ -15,7 +15,7 @@ This cookbook deploys the ALLUVIO APM Analysis Server in your own AWS account in
 
 In the following table, hit the **Launch Stack** button of the region where you want to deploy the APM Analysis Server.
 
-It will open the wizard fir the **Quick Start** deployment in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet. For more customization, use the Launch Stack button in the [how to customize](#how-to-customize) in the Q&A section below.
+It will open the wizard fir the **Quick Start** deployment in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet. For more customization, use the Launch Stack button in the [how to customize](#how-to-customize) in the FAQ section below.
 
 <div align="center">
   
