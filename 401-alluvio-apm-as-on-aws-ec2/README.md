@@ -82,10 +82,14 @@ Go to [Riverbed Support](https://support.riverbed.com/content/support/software/a
 
 After filling the parameters that are required for the deployment, for example the **URL** and **checksum** in the section "ALLUVIO APM Analysis Installer", and having configured other section, for example in the section "EC2 Instance Configuration" you can select different sizing for the EC2 instance, just scroll down and hit the **Create Stack** button.
 
+<div align="center">
+<img src="images/alluvio-apm-as-on-aws-ec2_create-stack-quickstart.png" alt="APM AS on AWS EC2 Create Stack" width="70%" height="auto">
+</div>
+
 > [!NOTE]
 > - The Create Stack button starts the deployment the ALLUVIO APM Analysis Server on an EC2 instance in the selected region
 
-## How to connect to the APM AS console?
+### How to connect to the APM AS console?
 
 When the stack is created, usually in less than 5 minutes, you should be able to connect from your browser to the Public URL of the APM Analysis Server (or Private URL:
 
