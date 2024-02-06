@@ -19,7 +19,7 @@ This cookbook deploys the ALLUVIO Aternity APM Analysis Server in your own AWS a
 
 In the following table, hit the **Launch Stack** button of the region where you want to deploy the APM Analysis Server.
 
-It will open the wizard of the **Quick Start** deployment in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet.
+It will open the wizard of the **Quick Start** deployment in the AWS CloudFormation console. There, just enter the **temporary URL** and **checksum** of the installer and hit the **Create Stack** button to deploy the APM Analysis Server in your default VPC and Subnet (if you need more customization see the [Custom Deployment](#custom-deployment) section).
 
 <div align="center">
   
@@ -40,9 +40,6 @@ It will open the wizard of the **Quick Start** deployment in the AWS CloudFormat
 | ap-southeast-2 | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 
 </div>
-
-> [!TIP]
-> If you need more customization (Subnet/VPC, Security Group,...) see the [Custom Deployment](#custom-deployment) in the section below.
 
 
 ## Custom deployment
