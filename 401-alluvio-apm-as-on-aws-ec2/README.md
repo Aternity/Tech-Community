@@ -87,7 +87,7 @@ After filling the parameters that are required for the deployment, for example t
 
 ## How to connect to the APM AS console?
 
-When the stack is created, usually in less than 5 minutes, in a Web Browser you should be able to connect to the Public URL or Private URL of the APM Analysis Server:
+When the stack is created, usually in less than 5 minutes, you should be able to connect from your browser to the Public URL of the APM Analysis Server (or Private URL:
 
 - **Public URL**: [https://ec2-your-instance-ip.your_region.compute.amazonaws.com](https://ec2-your-instance.your_region.compute.amazonaws.com)
 - **Private URL**: [https://ec2-your-instance-ip.your_region.compute.internal](https://ec2-your-instance.your_region.compute.internal)
