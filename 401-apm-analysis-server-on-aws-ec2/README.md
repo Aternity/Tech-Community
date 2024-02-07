@@ -10,7 +10,6 @@ This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/produc
 
 1. an AWS Account
 2. a temporary URL of the APM Analysis Server installer package, for example *https://yourstorage.com/folder/installer.tar?token=123&validity=12*
-3. the checksum of the installer package, for example *123412341234...*
 
 > [!TIP]
 > Check the [Cookbook FAQ](#FAQ) and refer to the [Riverbed Support website](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html)
@@ -19,7 +18,7 @@ This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/produc
 
 In the table below, hit the **Launch Stack** button of the region where you want to deploy the APM Analysis Server.
 
-Then, follow the wizard in your AWS CloudFormation console. You will have to enter the **temporary URL** and **checksum** of the installer, select a **Subnet** and a **Security Group**, scroll down and finally hit the **Create Stack** button to deploy the APM Analysis Server.
+Then, follow the wizard in your AWS CloudFormation console. You will have to provide a **temporary URL** of the installer, select a **Subnet** and a **Security Group**, scroll down and finally hit the **Create Stack** button to deploy the APM Analysis Server.
 
 <div align="center">
   
@@ -40,10 +39,8 @@ Then, follow the wizard in your AWS CloudFormation console. You will have to ent
 | Europe | eu-south-1 (Milan) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-south-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Europe | eu-south-2 (Spain) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-south-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Europe | eu-central-1 (Frankfurt) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
-| Europe | eu-central-2 (Zurich) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=eu-central-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Israel | il-central-1 (Tel Aviv) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=il-central-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Middle East | me-central-1 (UAE) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=me-central-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
-| Middle East | me-south-1 (Bahrain) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=me-south-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Asia Pacific | ap-northeast-1 (Tokyo) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Asia Pacific | ap-northeast-2 (Seoul) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Asia Pacific | ap-northeast-3 (Osaka) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-3#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
@@ -53,7 +50,6 @@ Then, follow the wizard in your AWS CloudFormation console. You will have to ent
 | Asia Pacific | ap-southeast-1 (Singapore) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Asia Pacific | ap-southeast-2 (Sydney) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 | Asia Pacific | ap-southeast-3 (Jakarta) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-3#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
-| Asia Pacific | ap-southeast-4 (Melbourne) | [![Deploy to Azure](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-4#/stacks/new?stackName=Riverbed-Community-Cookbook-ALLUVIO-APM-AS-on-EC2&templateURL=TEMPLATE1) |
 
 </div>
 
@@ -62,11 +58,9 @@ It is ready after just few minutes (usually less than 5 minutes) and you can con
 
 ## FAQ
 
-### How to get a temporary URL for the installer package and the checksum?
+### How to get a temporary URL for the installer package?
 
 From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer)* and download the latest version of the installer package. Then you can upload it in a storage of your choice, for example in a AWS S3 Bucket from which you can generate a temporary URL. Whether private or public, the URL must be accessible to the EC2 instance.
-
-On the same [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html), you can download the checksum file. It is a text file that contains the required checksum.
 
 ### How to connect to the APM Analysis Server console?
 
