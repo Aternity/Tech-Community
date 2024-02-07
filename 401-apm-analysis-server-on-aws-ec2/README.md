@@ -60,7 +60,7 @@ It is ready after just few minutes (usually less than 5 minutes) and you can con
 
 ### How to get a temporary URL for the installer package?
 
-From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer)* and download the latest version of the installer package. Then you can upload it in a storage of your choice, for example in a AWS S3 Bucket from which you can generate a protected temporary URL, for example *https://yourbucket.s3.amazonaws/temporary/installer.tar?token=123&validity=12*. Whether private or public, the URL must be accessible to the EC2 instance.
+From the [Riverbed Support page](https://support.riverbed.com/content/support/software/aternity-dem/aternity-apm.html) check for *Aternity APM Analysis Server (Linux Installer)* and download the latest version of the installer package. Then you can upload it in a storage of your choice, for example in a AWS S3 Bucket from which you can generate a protected temporary URL, for example *https://yourbucket.s3.amazonaws/temporary/installer.tar?token=123&validity=12*. Whether private or public, the URL must be accessible to the EC2 instance, allowing to fetch the package and install it.
 
 ### How to connect to the APM Analysis Server console?
 
