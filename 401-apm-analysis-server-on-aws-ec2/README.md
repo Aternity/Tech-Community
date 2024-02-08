@@ -1,6 +1,6 @@
 # Cookbook 401 - APM Analysis Server on AWS EC2
 
-This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/products/application-performance-monitoring/) Analysis Server in few clicks into an existing VPC/Subnet in your AWS account.
+This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/products/application-performance-monitoring/) Analysis Server in few clicks. It creates an EC2 instance into an existing VPC/Subnet in your AWS account.
 
 <div align="center">
 <img src="images/alluvio-apm-as-on-aws-ec2_login.png" alt="APM AS on AWS EC2" width="70%" height="auto">
@@ -8,7 +8,7 @@ This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/produc
 
 ## Prerequisites
 
-1. an AWS Account
+1. an account in AWS
 2. a temporary URL of the installer packager. This URL must be accessible for the EC2 instance, for example *https://yourbucket.s3.amazonaws/temporary/installer.tar?token=123&validity=12*
 
 > [!TIP]
