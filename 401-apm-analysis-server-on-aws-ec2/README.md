@@ -18,7 +18,7 @@ This cookbook deploys the ALLUVIO Aternity [APM](https://www.riverbed.com/produc
 
 In the table below, hit the **Launch Stack** button of the region where you want to deploy the APM Analysis Server.
 
-Then, follow the wizard in your AWS CloudFormation console. You will have to provide a **temporary URL** of the installer, select a **Subnet** and a **Security Group**, scroll down and finally hit the **Create Stack** button to deploy the APM Analysis Server.
+It will open the console of AWS CloudFormation, follow the wizard. You will have to provide the **temporary URL** of the installer, select a **Subnet** and a **Security Group**, scroll down and finally hit the **Create Stack** button to deploy the APM Analysis Server.
 
 <div align="center">
   
