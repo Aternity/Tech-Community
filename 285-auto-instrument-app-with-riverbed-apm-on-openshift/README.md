@@ -9,7 +9,7 @@ Enable Riverbed APM on an app running in a Red Hat OpenShift cluster, using the 
 2. a Red Hat OpenShift environment: Red Hat console access, OpenShift client CLI (`oc` command), a cluster with Linux machine pools and apps
 
 > [!NOTE]
-> This cookbook has been done with Red Hat OpenShift version 4
+> This cookbook has been tested with Red Hat OpenShift version 4
 
 ## Step 1. Get the details for Riverbed APM
 
