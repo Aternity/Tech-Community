@@ -77,9 +77,9 @@ For example the related lines in the configuration will look like this:
 > [!NOTE]
 > Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn the details on how to deploy the Riverbed Operator on a Kubernetes cluster.
 
-## Step 4. Check the setup is ready
+## Step 4. Check the setup
 
-You can check the Pods in the `riverbed-operator` namespace are ready.
+You can verify the Pods in the `riverbed-operator` namespace are ready.
 
 ```shell
 oc get pod -n riverbed-operator
@@ -98,30 +98,23 @@ riverbed-operator-controller-manager-56dd4ddf78-n2t66   2/2     Running   0     
 
 ## Step 5. *optional* Instrument a demo app
 
-1. Run the following command to deploy the demo application `yourapp` in the namespace `cookbook-app`. The app uses the docker image of a simple java webapp.
+### 5.1 Deployment
+
+Run the following command to deploy the demo application `yourapp` in the namespace `cookbook-app`. The app uses the docker image of a simple java webapp.
 
 ```shell
 oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-instrument-app-with-riverbed-apm-on-openshift/app/yourapp.yaml
 ```
 
-2. In a separate shell, run this command to open a local port that will give access the app. For example on port 8888
+### 5.2 Test the app
+
+In a separate shell, run this command to open a local port that will give access the app. For example on port 8888
 
 ```shell
 oc port-forward -n cookbook-app service/yourapp --address 127.0.0.1 8888:80
 ```
 
 Then you should be able to access from your browser to [http://127.0.0.1:8888](http://127.0.0.1:8888) or from the CLI `curl http://127.0.0.1:8888`
-
-<details>
-<summary>Clean up the demo app</summary>
-
-Simply run the following 
-
-```shell
-oc delete  -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-instrument-app-with-riverbed-apm-on-openshift/app/yourapp.yaml
-```
-
-</details>
 
 ## Step 5. Instrument your app
 
