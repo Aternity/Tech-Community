@@ -32,14 +32,18 @@ oc login --token=yourtoken --server=yourserver
 
 ## Step 3. Deploy the Riverbed Operator on the Cluster
 
-1. Run the following command to configure the required permissions for the Riverbed Operator and APM Agent:
+### 3.1 Permissions
+
+Run the following command to configure the required permissions for the Riverbed Operator and APM Agent:
 
 ```shell
 # Set the permissions
 oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-instrument-app-with-riverbed-apm-on-openshift/riverbed-operator-permissions-openshift.yaml
 ```
 
-2. Execute the scripts below to deploy the Riverbed Operator (using the `oc` command)
+### 3.2 Riverbed Operator
+
+Execute the scripts below to deploy the Riverbed Operator (using the `oc` command)
 
 ```shell
 # Install Cert-manager prerequisite
@@ -51,6 +55,8 @@ sleep 120
 # Install the Riverbed Operator
 oc apply -f https://raw.githubusercontent.com/riverbed/riverbed-operator/1.0.0/riverbed-operator.yaml
 ```
+
+### 3.3 Riverbed Operator configuration
 
 3. Run the following command, that will open the configuration in your editor before applying it to the cluster. There, you can configure the lines `customerId: ""` and `analysisServerHost: "agents.apm.YOUR-ENV.aternity.com"` adding the values of the **Customer Id** and **SaaS Analysis Server Host** obtained in Step 1.. When done, just save and close the file.
 
