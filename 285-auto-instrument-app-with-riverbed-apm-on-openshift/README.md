@@ -32,7 +32,7 @@ oc login --token=yourtoken --server=yourserver
 
 ## Step 3. Deploy the Riverbed Operator on the Cluster
 
-1. Run the following CLI to set the permissions on the Riverbed Operator and APM Agent:
+1. Run the following command to configure the required permissions for the Riverbed Operator and APM Agent:
 
 ```shell
 # Set the permissions
