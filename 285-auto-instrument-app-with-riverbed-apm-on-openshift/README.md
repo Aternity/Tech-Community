@@ -15,7 +15,7 @@ Enable Riverbed APM on an app running in a Red Hat OpenShift cluster, using the 
 
 In the Riverbed APM web console, from the Home page, hit "Deploy Collectors" and "Install now" button (or else navigate via the traditional menu: CONFIGURE > AGENTS > Install Agents).
 
-Then in the Linux agent panel, switch to the "Standard Agent Install" to find the:
+Then in the Linux agent panel, switch to the "Standard Agent Install" to find and grab the values of your:
 
 1. **Customer Id**, for example *12341234-12341234-13241234*
 
