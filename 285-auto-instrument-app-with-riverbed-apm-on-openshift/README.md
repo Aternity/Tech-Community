@@ -23,7 +23,7 @@ Then in the Linux agent panel, switch to the "Standard Agent Install" to find an
 
 ## Step 2. Connect to the cluster with `oc`
 
-Start a shell and connect to your cluster using `oc login` command. The command looks like this:
+Start a shell and connect to your cluster using `oc login`, the full command would look like this:
 
 ```shell
 oc login --token=yourtoken --server=yourserver
