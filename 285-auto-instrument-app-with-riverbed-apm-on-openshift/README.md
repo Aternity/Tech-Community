@@ -58,7 +58,7 @@ oc apply -f https://raw.githubusercontent.com/riverbed/riverbed-operator/1.0.0/r
 
 ### 3.3 Riverbed Operator configuration
 
-3. Run the following command, that will open the configuration in your editor before applying it to the cluster. There, you can configure the lines `customerId: ""` and `analysisServerHost: "agents.apm.YOUR-ENV.aternity.com"` adding the values of the **Customer Id** and **SaaS Analysis Server Host** obtained in Step 1.. When done, just save and close the file.
+Run the following command, that will open the configuration in your editor before applying it to the cluster. There, you can configure the lines `customerId: ""` and `analysisServerHost: "agents.apm.YOUR-ENV.aternity.com"` adding the values of the **Customer Id** and **SaaS Analysis Server Host** obtained in Step 1.. When done, just save and close the file.
 
 ```shell
 # Configure the Riverbed Operator with your Customer Id and SaaS Analysis Server Host
