@@ -39,7 +39,7 @@ oc login --token=yourtoken --server=yourserver
 oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-instrument-app-with-riverbed-apm-on-openshift/riverbed-operator-permissions-openshift.yaml
 ```
 
-2. Execute the commands to deploy the Riverbed Operator, using the `oc` command
+2. Execute the scripts below to deploy the Riverbed Operator (using the `oc` command)
 
 ```shell
 # Install Cert-manager prerequisite
