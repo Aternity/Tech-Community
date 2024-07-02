@@ -96,7 +96,7 @@ riverbed-operator-controller-manager-56dd4ddf78-n2t66   2/2     Running   0     
 ```
 
 
-## Step 5. *optional* Instrument a demo app
+## Step 5. *optional* Install a demo app
 
 ### 5.1 Deployment
 
