@@ -159,15 +159,31 @@ For example, with the demo application `yourapp`, which is a java app, the comma
 ```shell
 oc patch deployment -n cookbook-app yourapp -p '{"spec": {"template":{"metadata":{"annotations":{"instrument.apm.riverbed/inject-java":"true"}}}} }'
 ```
-> [!NOTE]
-> For more details about automatic instrumentation, please refer to the readme page of the [Riverbed Operator](https://github.com/riverbed/riverbed-operator).
 
 > [!TIP]
-> The APM instrumentation annotation can also be added directly to the manifest file of the app. For example with the demo app, [app/yourapp-with-apm.yaml](app/yourapp-with-apm.yaml) is annotated to enable APM instrumentation - the file is based on the original manifest [app/yourapp.yaml](app/yourapp.yaml) without annotation. Then the manifest can be applied to the cluster as usual:
+> The APM instrumentation annotation can also be added to the manifest files, and can be defined at the app level or at the namespace level so that all the application of the namespace will be instrumented.
+>
+> For example with the demo app,
+>
+> In [app/yourapp-with-apm.yaml](app/yourapp-with-apm.yaml) the deployment spec is annotated to enable APM instrumentation just for this app - the file is based on the original manifest [app/yourapp.yaml](app/yourapp.yaml) without annotation. Then the manifest can be applied to the cluster as usual:
 > ```shell
 > # Deploy YourApp (with APM)
 > oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-auto-instrument-app-with-riverbed-apm-on-openshift/app/yourapp-with-apm.yaml
 > ```
+>
+> In [app/namespace-with-apm.yaml](app/namespace-with-apm.yaml), the namespace is annoated with the APM Instrumentation. Then the manifest can be applied to the cluster as usual:
+> ```shell
+> # Apply the namespace with APM annotation
+> oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-auto-instrument-app-with-riverbed-apm-on-openshift/app/namespace-with-apm.yaml
+>
+> # Restart the deployment of all the applications in the namespace (here there is just one single deployment deployment/yourapp)
+> kubectl rollout restart -n cookbook-app deployment
+> ```
+
+
+> [!NOTE]
+> For more details about automatic instrumentation, please refer to the readme page of the [Riverbed Operator](https://github.com/riverbed/riverbed-operator).
+
 
 ## Step 7. Monitor in Riverbed APM web console 
 
