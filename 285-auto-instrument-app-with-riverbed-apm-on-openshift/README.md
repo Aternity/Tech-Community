@@ -78,10 +78,10 @@ oc apply -f riverbed_configuration_v1.0.0.yaml
 
 > [!TIP]
 > The following command can also be used to automatically open the configuration in your editor. The configuration will be applied when you save and close the file from the editor.
-```shell
-# Configure the Riverbed Operator with your Customer Id and SaaS Analysis Server Host
-oc create -f https://raw.githubusercontent.com/riverbed/riverbed-operator/1.0.0/riverbed_configuration_v1.0.0.yaml --namespace=riverbed-operator --edit
-```
+> ```shell
+> # Configure the Riverbed Operator with your Customer Id and SaaS Analysis Server Host
+> oc create -f https://raw.githubusercontent.com/riverbed/riverbed-operator/1.0.0/riverbed_configuration_v1.0.0.yaml --namespace=riverbed-operator --edit
+> ```
 
 > [!NOTE]
 > Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn the details on how to deploy the Riverbed Operator on a Kubernetes cluster.
@@ -180,10 +180,8 @@ oc patch deployment -n cookbook-app yourapp -p '{"spec": {"template":{"metadata"
 > oc rollout restart -n cookbook-app deployment
 > ```
 
-
 > [!NOTE]
 > For more details about automatic instrumentation, please refer to the readme page of the [Riverbed Operator](https://github.com/riverbed/riverbed-operator).
-
 
 ## Step 7. Monitor in Riverbed APM web console 
 
