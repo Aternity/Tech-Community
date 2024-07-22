@@ -177,7 +177,7 @@ oc patch deployment -n cookbook-app yourapp -p '{"spec": {"template":{"metadata"
 > oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-auto-instrument-app-with-riverbed-apm-on-openshift/app/namespace-with-apm.yaml
 > ```
 >
-> If the app was already deployed and running before beeing annotated, it needs a rollout restart. For example
+> If the app was already deployed and running before beeing annotated, it needs a rollout restart that can be triggere for example with:
 > ```shell
 > # Restart the deployment of all the applications in the namespace (here there is just one single deployment deployment/yourapp)
 > oc rollout restart -n cookbook-app deployment
