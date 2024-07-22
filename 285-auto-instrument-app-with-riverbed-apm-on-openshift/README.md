@@ -84,7 +84,7 @@ oc apply -f riverbed_configuration_v1.0.0.yaml
 > ```
 
 > [!NOTE]
-> Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn the details on how to deploy the Riverbed Operator on a Kubernetes cluster.
+> Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn more details on how to deploy the Riverbed Operator on a Kubernetes cluster.
 
 ## Step 4. Check the setup
 
@@ -212,7 +212,7 @@ oc delete -f https://raw.githubusercontent.com/riverbed/riverbed-operator/1.0.0/
 ```
 
 > [!NOTE]
-> Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn the details on how to deploy the Riverbed Operator on a Kubernetes cluster.
+> Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn more details on how to deploy the Riverbed Operator on a Kubernetes cluster.
 
 #### License
 
