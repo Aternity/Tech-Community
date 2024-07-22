@@ -76,15 +76,15 @@ Then apply the configuration:
 oc apply -f riverbed_configuration_v1.0.0.yaml
 ```
 
-> [!NOTE]
-> Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn the details on how to deploy the Riverbed Operator on a Kubernetes cluster.
-
 > [!TIP]
 > The following command can also be used to automatically open the configuration in your editor. The configuration will be applied when you save and close the file from the editor.
 ```shell
 # Configure the Riverbed Operator with your Customer Id and SaaS Analysis Server Host
 oc create -f https://raw.githubusercontent.com/riverbed/riverbed-operator/1.0.0/riverbed_configuration_v1.0.0.yaml --namespace=riverbed-operator --edit
 ```
+
+> [!NOTE]
+> Please refer to the [Riverbed Operator](https://github.com/riverbed/riverbed-operator) to learn the details on how to deploy the Riverbed Operator on a Kubernetes cluster.
 
 ## Step 4. Check the setup
 
