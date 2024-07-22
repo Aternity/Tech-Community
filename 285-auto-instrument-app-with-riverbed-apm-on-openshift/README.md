@@ -165,17 +165,20 @@ oc patch deployment -n cookbook-app yourapp -p '{"spec": {"template":{"metadata"
 >
 > For example with the demo app,
 >
-> In [app/yourapp-with-apm.yaml](app/yourapp-with-apm.yaml) the deployment spec is annotated to enable APM instrumentation just for this app - the file is based on the original manifest [app/yourapp.yaml](app/yourapp.yaml) without annotation. Then the manifest can be applied to the cluster as usual:
+> In [app/yourapp-with-apm.yaml](app/yourapp-with-apm.yaml) the deployment spec of the app is annotated - the file is based on the original manifest [app/yourapp.yaml](app/yourapp.yaml) without annotation. The manifest can be applied to the cluster as usual:
 > ```shell
-> # Deploy YourApp (with APM)
+> # Apply or Deploy YourApp with APM instrumentation
 > oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-auto-instrument-app-with-riverbed-apm-on-openshift/app/yourapp-with-apm.yaml
 > ```
 >
-> In [app/namespace-with-apm.yaml](app/namespace-with-apm.yaml), the namespace is annoated with the APM Instrumentation. Then the manifest can be applied to the cluster as usual:
+> In [app/namespace-with-apm.yaml](app/namespace-with-apm.yaml), the namespace is annotated with the APM Instrumentation and can be applied to the cluster:
 > ```shell
-> # Apply the namespace with APM annotation
+> # Annotate the namespace for APM instrumentation
 > oc apply -f https://raw.githubusercontent.com/Aternity/Tech-Community/main/285-auto-instrument-app-with-riverbed-apm-on-openshift/app/namespace-with-apm.yaml
+> ```
 >
+> If the app was already deployed and running before beeing annotated, it needs a rollout restart. For example
+> ```shell
 > # Restart the deployment of all the applications in the namespace (here there is just one single deployment deployment/yourapp)
 > oc rollout restart -n cookbook-app deployment
 > ```
