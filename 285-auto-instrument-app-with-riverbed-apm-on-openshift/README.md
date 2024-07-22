@@ -161,7 +161,7 @@ oc patch deployment -n cookbook-app yourapp -p '{"spec": {"template":{"metadata"
 ```
 
 > [!TIP]
-> The APM instrumentation annotation can also be added to the manifest files, and can be defined at the deployment level to instrument a specific app, or at the namespace level so that all the applications in the namespace will be instrumented.
+> The APM instrumentation annotation can also be added to the manifest files, and can be defined at the deployment level to instrument a specific app, or at the namespace level to instrument all the applications in the namespace.
 >
 > For example with the demo app,
 >
