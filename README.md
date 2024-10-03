@@ -1,5 +1,8 @@
 # Riverbed Tech-Community - APM
 
+> [!WARNING]
+> The Riverbed APM OpenTelemetry cookbooks have moved to the [Riverbed-Community-Toolkit](https://github.com/riverbed/Riverbed-Community-Toolkit/tree/master/APM)
+
 Dedicated to the Riverbed Community, this repo contains technical contributions that help customers, partners and engineers to integrate APM.
 For example: custom scripts, custom synthetic test, cookbooks, howtos and more.
 
